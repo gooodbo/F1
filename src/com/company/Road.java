@@ -12,13 +12,9 @@ import java.util.Random;
 
 public class Road extends JPanel implements ActionListener, Runnable {
     Timer mainTimer = new Timer(20, this);
-
     Image img = new ImageIcon("res/road.png").getImage();
-
     Player p = new Player();
-
     Thread enemieFactory = new Thread(this);
-
     ArrayList<Enemy> enemies = new ArrayList<>();
 
     public Road() {
@@ -34,7 +30,6 @@ public class Road extends JPanel implements ActionListener, Runnable {
             @Override
             public void keyPressed(KeyEvent e) {
                 p.keyPressed(e);
-
             }
 
             @Override

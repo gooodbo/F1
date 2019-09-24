@@ -16,15 +16,12 @@ public class Player {
 
     Image img = imgC;
 
-
     int v = 0;
     int dv = 0;
     int s = 0;
-
     int x = 50;
     int y = 30;
     int dy = 0;
-
     int layer1 = 0;
     int layer2 = 1200;
 
@@ -85,11 +82,7 @@ public class Player {
     public void keyReleased(KeyEvent e) {
         int key = e.getKeyCode();
 
-        if (key == KeyEvent.VK_LEFT) {
-            dv = 0;
-        }
-
-        if (key == KeyEvent.VK_RIGHT) {
+        if (key == KeyEvent.VK_LEFT||key == KeyEvent.VK_RIGHT) {
             dv = 0;
         }
 
